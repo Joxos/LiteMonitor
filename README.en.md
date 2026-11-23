@@ -162,16 +162,16 @@ Example:
 ```bash
 git clone https://github.com/Diorser/LiteMonitor.git
 cd LiteMonitor
-# default: .NET 8 build (broadest compatibility)
+# .NET 8
 dotnet build -c Release
 
-# optional: build against the .NET 11 runtime (requires .NET 11 SDK)
+# .NET 11
 dotnet build -c Release -p:BuildNet11=true
 ```
 
 Output:
 ```
-/bin/Release/net8.0-windows/LiteMonitor.exe        # default
+/bin/Release/net8.0-windows/LiteMonitor.exe
 /bin/Release/net11.0-windows/LiteMonitor.exe       # -p:BuildNet11=true
 ```
 
