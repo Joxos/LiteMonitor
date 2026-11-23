@@ -1,13 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <!-- 默认 net8.0-windows（兼容面最广）；加 -p:BuildNet11=true 可改用 .NET 11 构建 -->
     <TargetFramework Condition="'$(BuildNet11)' == 'true'">net11.0-windows</TargetFramework>
     <TargetFramework Condition="'$(BuildNet11)' != 'true'">net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <Nullable>enable</Nullable>
-    <!-- .NET 10+ SDK 的 WinForms 设计器分析器会把 WFO1000/WFO3002 升级为 error，这里统一抑制，保证新 SDK 也能直接构建 -->
     <NoWarn>$(NoWarn);WFO1000;WFO3002</NoWarn>
     <ImplicitUsings>enable</ImplicitUsings>
     <PlatformTarget>x64</PlatformTarget>

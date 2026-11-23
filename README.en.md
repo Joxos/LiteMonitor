@@ -155,7 +155,7 @@ Example:
 
 ### Requirements
 - Windows 10 / 11  
-- .NET 8 SDK (or newer; verified with .NET 11.0.100 SDK)  
+- .NET 8/11 SDK  
 - Visual Studio 2022 / JetBrains Rider
 
 ### Build

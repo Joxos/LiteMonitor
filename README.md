@@ -155,7 +155,7 @@ A lightweight and customizable desktop hardware monitoring tool — real-time mo
 
 ### 环境要求
 - Windows 10 / 11  
-- .NET 8 SDK（或更高版本，已在 .NET 11.0.100 SDK 上验证通过）
+- .NET 8/11 SDK
 - Visual Studio 2022 或 Rider
 
 ### 编译命令
